@@ -1,0 +1,381 @@
+/*   
+     Original sample CSS file distributed with the Calendar plugin
+*/
+
+/*
+     FILE ARCHIVED ON 6:48:13 May 6, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:06:49 Aug 3, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body {
+	margin:			0;
+	padding:		0;
+       	background:	 	#fff3de;
+       	color:			#4f0000;
+	font-size:		small;
+	font-family:		Trebuchet MS,Verdana,Geneva,Arial,Sans-serif;
+}
+a {
+	color:			#0070ba;
+	text-decoration:	none;
+}
+a.local {
+	border-bottom:		1px dotted #83660f;
+}
+a:visited {
+	color:			#0044c8;
+}
+a:hover {
+	text-decoration:	underline;
+}
+ul {
+	margin-left:		0;
+	padding-left:		20px;
+}
+blockquote {
+	padding-left:		10px;
+	padding-right:		60px;
+	border-left:		3px solid #83660F;
+	font-family:		Verdana,Geneva,Arial,Sans-serif;
+}
+blockquote.fixed {
+	font-family:		Courier,fixed;
+	font-size:		90%;
+}
+td 	{
+	vertical-align:		top;
+}
+img {
+	border-width:		0;
+}
+fieldset {
+	padding:		1em;
+}
+.label {
+	float:			left;
+	width:			6em;
+	text-align:		right;
+	margin-right:		0.5em;
+	padding-top:		0.2em;
+	font-weight:		bold;
+	clear:			left;
+}
+.widget {
+	margin-left:		6em;
+}
+
+.ahem {
+	display:		none;
+}
+
+div#header {
+	background:		#fff;
+	color:			inherit;
+	border-bottom:		1px solid #83660f; 
+	text-align:		center;
+	vertical-align:		baseline;
+}
+div#body {
+	margin:			0;
+	padding:		0;
+	width:			100%;
+	height:			100%;
+	position:		relative;
+	top:			0;
+	left:			0;
+	clear:			both;
+}
+div#foot {
+	background:		#fff; 
+	color:			#aaa;
+	font-size:		80%;
+	text-align:		right;
+	border-top:		2px solid #83660f; 
+}
+
+h1#motto {
+	margin:			0; 
+	padding:		0; 
+	font-weight:		normal;
+	font-size:		110%;
+}
+div#header > div.breadcrumb {
+	font-size:		80%;
+}
+div#header > div.breadcrumb > .breadcrumb-this {
+	font-size:		100%;
+}
+div#header > div.breadcrumb a:hover {
+	background:		#f5deb3;
+	text-decoration:	none;
+}
+div#days {
+	margin:			0 240px 0 0;
+	padding:		0;
+	background:		#fff3de;
+	color:			inherit;
+}
+div.day {
+	clear:			both;
+}
+h2.date {
+	margin:			0; 
+	padding:		2ex;
+	background:		#f5deb3;
+	color:			#007C8C; 
+	font-weight:		bold; 
+	font-size:		80%;
+	text-align:		right;
+	border-top:		1px solid #83660F; 
+	border-bottom:		1px solid #83660F;
+	border-right:		1px solid #83660f;
+}
+div.story {
+	clear:			both;
+	padding:		1ex;
+}
+h3.storytitle {
+	margin:			0;
+	padding:		0;
+	font-weight:		normal;
+	font-size:		120%;	
+	text-align:		center;
+	font-family:		Verdana,Geneva,Arial,Sans-serif;
+}
+div.storybody{}
+.image-right {
+	float:			right;
+	margin-left:		1ex;
+	margin-bottom:		1ex;
+}
+.image-left {
+	float:			left;
+	margin-right:		1ex;
+	margin-bottom:		1ex;
+}
+.image-inline {
+	display:		inline;
+	vertical-align:		top;
+}
+
+div.storytail {
+	font-size:		80%;
+	text-align:		right;
+	clear:			both;
+}
+div.storytail > span.time,   div.storytail > span.trackback,
+div.storytail > span.google, div.storytail > span.buy,
+div.storytail > span.via,    div.storytail > span.book {
+	float:			left;
+}
+div.storytail > span.path {}
+div.story + div.story {
+	border-top:		1px solid #83660f;
+}
+div#sidebar {
+	position:		absolute;
+	top:			0;
+	right:			0;
+	margin-left:		4px;
+	padding:		0;
+	background:		#fffbf0;
+	color:			inherit;
+	width:			240px;
+	border-left:		1px solid #83660f;
+	border-bottom:		1px solid #83660f;
+}
+h2.sidebarheader {
+	margin:			0; 
+	padding:		2ex; 
+	background:		#f5deb3;
+	color:			#007C8C; 
+	font-weight:		bold; 
+	font-size:		80%;
+	text-align:		left;
+	border-top:		1px solid #83660F; 
+	border-bottom:		1px solid #83660F;
+}
+div.box {
+	padding:		1ex;
+}
+div.box + div.box {
+	border-top:		1px solid #83660f;
+}
+h3.boxtitle {
+	margin:			0;
+	padding:		0;
+	font-weight:		normal;
+	font-size:		120%;	
+	text-align:		center;
+	font-family:		Verdana,Geneva,Arial,Sans-serif;
+}
+div.boxbody{
+	font-size:		80%;
+}
+div.boxbody h4 {
+	margin-top: 		0.5em;
+	margin-bottom:		0;
+	font-family:		Verdana,Geneva,Arial,Sans-serif;
+	text-align:		center;
+}
+
+.searchword {
+	background:		yellow;
+	color:			inherit;
+}
+
+.calendar { }
+.calendar table {
+	margin-left:		auto; 
+	margin-right:		auto;
+}
+.calendar table .prev-link {
+	margin-left:		0; 
+	text-align:		left;
+}
+.calendar table .next-link {
+	margin-right:		0;
+	text-align:		right;
+}
+.month-calendar, .year-calendar {
+	border-collapse:	collapse; 
+}
+.month-calendar-head, .year-calendar-head {
+	font-size:		110%;
+	font-weight:		bold;
+}
+.month-calendar-day-head, .year-calendar-subhead {
+	font-weight:		normal;
+}
+
+.month-calendar {
+	text-align: 		center;
+}
+
+.month-calendar-day-noday,
+.month-calendar-day-link,
+.month-calendar-day-nolink,
+.month-calendar-day-this-day,
+.month-calendar-day-future {
+	font-family:		Georgia,New Century Schoolbook,Times,serif;
+}
+
+.year-calendar-month-link, 
+.year-calendar-month-nolink,
+.year-calendar-this-month, 
+.year-calendar-month-future {
+}
+
+.month-calendar-day-future, .year-calendar-month-future {
+	color:			#83660F;
+}
+
+.month-calendar {
+	background:		#fff3de;
+	border: 		1px solid #83660f;
+}
+.calendar th {
+	border-bottom: 		1px dotted #83660f;
+}
+.Saturday {
+	border-left:		1px dotted #83660f;
+}
+.Sunday {
+	border-right:		1px dotted #83660f;
+}
+.Saturday, .Sunday {
+	background:		#f5deb3;
+}
+.month-calendar-day-this-day, .year-calendar-this-month {
+	background:		#a5e4ff;
+}
+.year-calendar {
+	background:		#fff3de;
+	border: 		1px dotted #83660f;
+}
+
+.categories {
+	list-style-type:	none;
+}
+.categories ul {
+	list-style-type:	none;
+	padding-left:		2ex;
+ 	margin-left:		0;
+	border-left:		1px dotted #83660F;
+}
+
+.netflix {
+	list-style-type:	none;
+}
+
+.outline {
+	padding-left:		20px;
+}
+.outline ol {
+	margin-left:		0;
+	padding-left:		20px;
+}
+
+ul#validation {
+	text-align: center;
+	list-style-type:	none;
+	padding-left:		2ex;
+ 	margin-left:		0;
+}
+
+.annotation {
+	font-family:		"Georgia", "New Century Schoolbook", "Times", serif;
+	font-size:		80%;
+	background:		#fffbf0;
+	color:			inherit;
+	border-left:		1px solid #83660F;
+	border-right:		1px solid #83660F;
+}
+.annotation[class~="firstcell"] {
+	border-top:		1px solid #83660F;
+}
+.annotation[class~="lastcell"] {
+	border-bottom:		1px solid #83660F;
+}
+.blogroll {
+	margin-left:		0;
+	list-style-type:	none;
+}
+.blogroll ul {
+	list-style-type:	none;
+	padding-left:		2ex;
+ 	margin-left:		0;
+	border-left:		1px dotted #83660F;
+}
+
+.commentform {
+	border-top:		1px solid #83660F;
+	clear:			both;
+}
+.writebacks {
+	border-top:		1px solid #83660F;
+	clear:			both;
+}
+
+div#bodyfoot {clear: both;}
+
+div#foot a, div#foot a:visited {
+	background:		inherit;
+	color:			#9090c0;
+}
+
+.pullquote {
+	padding:		1ex;
+	padding-top:		0;
+	margin:			0;
+	font-size:		167%;
+	font-family:		"Georgia", "New Century Schoolbook", "Times", serif;
+	text-align:		left;
+	float:			right;
+	width:			8em;
+	line-height:		1.0em;
+}
+
