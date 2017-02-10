@@ -1,6 +1,6 @@
 # Blosxom Plugin: calendar                                         -*- perl -*-
-# Author: Todd Larason (jtl@molehill.org)
-# Version: 0+6i
+# Author: Todd Larason (jtl@molehill.org) modified by Kadin2048
+# Version: 0+7i-kadin
 # Blosxom Home/Docs/Licensing: http://www.raelity.org/blosxom
 # Calendar plugin Home/Docs/Licensing:
 #   http://molelog.molehill.org/blox/Computers/Internet/Web/Blosxom/Calendar/
@@ -27,7 +27,7 @@ $first_dow = 0
 # set to 0 to disable attempted caching
 $use_caching    = 1 unless defined $use_caching;
 $months_per_row = 3 unless defined $months_per_row;
-$debug_level    = 1 unless defined $debug_level;
+$debug_level    = 0 unless defined $debug_level;
 # -------------------------------------------------------------------
 
 use Time::Local;
@@ -41,7 +41,7 @@ $prev_year_link  = '';
 $next_year_link  = '';
 
 my $package    = "calendar";
-my $cachefile  = "$blosxom::plugin_state_dir/.$package.cache";
+my $cachefile  = "$blosxom::plugin_state_dir/$package.cache";
 my $cache;
 my $save_cache = 0;
 my $files;
